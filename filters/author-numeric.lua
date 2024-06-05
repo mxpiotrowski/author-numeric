@@ -51,7 +51,7 @@ function Cite (el)
       author = author .. ' et al.'
    end
 
-   local sep = pandoc.Space
+   local sep = ' '
    if FORMAT:match 'latex' then
       sep = pandoc.RawInline('latex', '\\ ') -- ensure interword space
    end
