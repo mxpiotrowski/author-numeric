@@ -19,10 +19,10 @@ Add the `author-numeric.lua` filter **after** `citeproc`.  When processing your 
 
 For a citation style that uses superscript numbers, say, [apa-numeric-superscript.csl](https://github.com/citation-style-language/styles/blob/master/apa-numeric-superscript.csl), you’d get:
 
-| Markdown           | Result          |
-|--------------------|-----------------|
-| `@Klaus1966b`      | Klaus^1^        |
-| `@Klaus1966b [12]` | Klaus^1(p. 12)^ |
+| Markdown           | Result                   |
+|--------------------|--------------------------|
+| `@Klaus1966b`      | Klaus<sup>1</sup>        |
+| `@Klaus1966b [12]` | Klaus<sup>1(p. 12)</sup> |
 
 Note `author-numeric.lua` automatically ensures that there is a space before a number in brackets or parenthesis and _no space_ before superscripts.
 
